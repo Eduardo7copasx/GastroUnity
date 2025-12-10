@@ -177,7 +177,7 @@ def top_10_cul_ruim(df1):
        .agg(
             media_rating = ('Aggregate rating', 'mean'),
             qtd_rest = ('Restaurant ID', 'count')
-       ).query('qtd_rest >= 10').sort_values('media_rating', ascending=True).reset_index().head(top_n))
+       ).query('qtd_rest >= 10').sort_values('media_rating', ascending=True).reset_index().iloc[1:top_n+1])
     fig = px.bar(df1_aux, x='Cuisines', y='media_rating', text='media_rating', text_auto='.2f', title=f'Top {top_n} piores tipos de culinária',
                  labels={
                  "media_rating" : "Média das avaliações",
@@ -265,4 +265,5 @@ with tab1:
             st.plotly_chart(fig, use_container_width=True) 
         with col2:
            fig = top_10_cul_ruim(df1)
+
            st.plotly_chart(fig, use_container_width=True) 
