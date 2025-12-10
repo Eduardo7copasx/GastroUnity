@@ -160,7 +160,16 @@ d. Top melhores tipos de culinária.
 Painel online, hospedado em um Cloud e disponível para acesso
 em qualquer dispositivo conectado à internet.
 
-O painel pode ser acessado através desse link:
+O painel pode ser acessado através desse link:https://gastrounity-cds.streamlit.app/
 
+# Conclusão
 
+O objetivo desse projeto é criar um conjunto de gráficos e/ou
+tabelas que exibam essas métricas da melhor forma possível para
+o CEO. 
 
+# Próximo passos
+
+1. Reduzir o número de métricas.
+2. Criar novos filtros.
+3. Adicionar novas visões de negócio.
